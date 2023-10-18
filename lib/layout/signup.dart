@@ -1,3 +1,4 @@
+import 'package:coffee_house/layout/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -86,6 +87,8 @@ class _signupState extends State<signup> {
           Container(child: ElevatedButton(
             onPressed: () {
                 //postdata();
+                Navigator.of(context).push(MaterialPageRoute(
+                builder: (BuildContext context) => homepage()));
             },
               style: ElevatedButton.styleFrom(
                 primary: Color.fromARGB(253, 57, 27, 9),
